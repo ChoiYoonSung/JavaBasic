@@ -46,7 +46,7 @@ public class JDBCBoard {
 					System.out.print(rs.getObject("board_no") + "\t");
 					System.out.print(rs.getObject("title")+ "\t");
 					System.out.print(rs.getObject("user_id")+ "\t");
-					System.out.println(rs.getObject("reg_date"));
+					System.out.println(sdf.format(rs.getObject("reg_date")));
 				}
 
 				System.out.println("----------------------------");
